@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Band Website</title>
+    
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      body {
+        font-family: "Lato", sans-serif;
+        line-height: 1.5;
+      }
+
+      .menu {
+        width: 100%;
+      }
+
+      .menu ul {
+        list-style: none;
+        background-color: black;
+      }
+
+      .menu li {
+        display: inline-block;
+        padding: 10px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px;
+      }
+
+      .menu a:hover {
+        background-color: lightgray;
+        color: black;
+      }
+
+      .bg {
+        background-image: url(file:///C:/Users/HP/Documents/w3school%20extract/W3Schools-2021-09-19/w3images/chicago.jpg);
+        min-height: 600px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .bg div {
+        text-align: center;
+        padding-top: 500px;
+        color: white;
+      }
+      .bg p {
+        padding-top: 10px;
+      }
+      .band-container {
+        min-height: 500px;
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      .band80,
+      .tour80,
+      .cont80 {
+        width: 70%;
+        margin: auto;
+      }
+      .band-hold {
+        text-align: center;
+      }
+      .band-hold h1 {
+        font-weight: 400;
+        padding: 20px;
+        letter-spacing: 5px;
+        font-size: 30px;
+      }
+      .band-hold h5 {
+        padding-bottom: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+      .band-txt  {
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .img-holder {
+        width: 100%;
+        padding-top: 70px;
+      }
+      .img70 {
+        width: 90%;
+        margin: auto;
+      }
+      .band-left {
+        min-height: 200px;
+        width: 22%;
+        float: left;
+      }
+      .band-right {
+        min-height: 200px;
+        width: 22%;
+        float: right;
+      }
+
+      .band-center {
+        min-height: 200px;
+        width: 22%;
+        margin: auto;
+      }
+      .img-holder img {
+        width: 100%;
+        border-radius: 5px;
+        vertical-align: middle;
+      }
+      .img-holder h3 {
+        text-align: center;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+        font-weight: 100;
+      }
+      .tour-container {
+        background-color: black;
+        padding: 90px 0px;
+      }
+      .tour-hold {
+        text-align: center;
+        color: white;
+      }
+      .tour-hold h1 {
+        font-weight: 400;
+        letter-spacing: 5px;
+        font-size: 30px;
+      }
+      .tour-hold h5 {
+        padding-bottom: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.6;
+      }
+      .sold-holder {
+        background-color: white;
+        min-height: 200px;
+      }
+      .tour-img {
+        width: 100%;
+        margin-top: 40px;
+      }
+      .tour-left {
+        min-height: 300px;
+        width: 32%;
+        float: left;
+        background-color: white;
+      }
+      .tour-right {
+        min-height: 300px;
+        width: 32%;
+        float: right;
+        background-color: white;
+      }
+      .tour-center {
+        min-height: 300px;
+        width: 32%;
+        margin: auto;
+        background-color: white;
+      }
+      .image-holder {
+        min-height: 150px;
+      }
+      .image-holder img {
+        width: 100%;
+      }
+      .text-holder {
+        min-height: 150px;
+        font-size: 15px;
+        padding: 20px;
+      }
+      .text-holder h3 {
+        font-size: 15px;
+        padding-bottom: 15px;
+      }
+      .text-holder p {
+        padding-bottom: 15px;
+      }
+
+      .text-holder a {
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: black;
+        padding: 10px;
+      }
+      .text-holder a:hover {
+        background-color: lightgray;
+        color: black;
+      }
+      .contact-container {
+        background-color: white;
+        padding: 40px;
+      }
+      .contact-container h1 {
+        font-weight: 400;
+        letter-spacing: 5px;
+        font-size: 30px;
+        text-transform: uppercase;
+      }
+      .contact-container .txt {
+        padding-bottom: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 0.6;
+        
+      }
+      .contact-holder{
+        width: 100%;
+        padding-top: 30p;
+      }
+      .con-left{
+        min-height: 200px;
+        width: 40%;
+        float: left;
+      }
+      .con-right{
+        min-height: 200px;
+        width: 50%;
+        float: right;
+      }
+
+      .bg-image {
+        clear: both;
+        background-image: url(file:///C:/Users/HP/Documents/w3school%20extract/W3Schools-2021-09-19/w3images/map.jpg);
+        min-height: 600px;
+        background-size: 100% 100%;
+        
+      }
+      footer {
+        background-color: white;
+        min-height: 100px;
+      }
+      footer h6{
+        text-align: center;
+        padding-top: 50px;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#band">band</a></li>
+        <li><a href="#tour">tour</a></li>
+        <li><a href="#contact">contact</a></li>
+        <li><a href="#">more</a></li>
+      </ul>
+    </nav>
+    <section class="bg">
+      <div>
+        <h1>Chicago</h1>
+        <p>Thank you, Chicago - A night we won't forget.</p>
+      </div>
+    </section>
+    <div class="band-container" id="band">
+      <div class="band80">
+        <div class="band-hold">
+          <h1>THE BAND</h1>
+          <h5><i>We love music</i></h5>
+        </div>
+        <div class="band-txt">
+          <p>
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div class="img-holder">
+          <div class="img70">
+            <div class="band-left"> 
+              <h3>name 1</h3>
+              <img
+                src="file:///C:/Users/HP/Documents/w3school%20extract/W3Schools-2021-09-19/w3images/bandmember.jpg"
+                alt=""
+             />
+            </div>
+            <div class="band-right">
+              <h3>name 2</h3>
+              <img
+                src="file:///C:/Users/HP/Documents/w3school%20extract/W3Schools-2021-09-19/w3images/bandmember.jpg"
+                alt=""
+              />
+            </div>
+            <div class="band-center">
+              <h3>name 3</h3>
+              <img
+                src="file:///C:/Users/HP/Documents/w3school%20extract/W3Schools-2021-09-19/w3images/bandmember.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tour-container" id="tour">
+      <div class="tour80">
+        <div class="tour-hold">
+          <h1>TOUR DATES</h1>
+          <h5><i>Remember to book your tickets!</i></h5>
+        </div>
+        <div class="sold-holder">
+          <h1>finish this</h1>
+        </div>
+        <div class="tour-img">
+          <div class="tour-left">
+            <div class="image-holder">
+              <img
+                src="file:///C:/Users/delight/Documents/W3Schools-2021-09-19/w3images/newyork.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-holder">
+              <h3>New York</h3>
+              <p style="opacity: 0.6">Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#">buy tickets</a>
+            </div>
+          </div>
+          <div class="tour-right">
+            <div class="image-holder">
+              <img
+                src="file:///C:/Users/delight/Documents/W3Schools-2021-09-19/w3images/sanfran.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-holder">
+              <h3>San Francisco</h3>
+              <p style="opacity: 0.6">Fri 29 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#">buy tickets</a>
+            </div>
+          </div>
+          <div class="tour-center">
+            <div class="image-holder">
+              <img
+                src="file:///C:/Users/delight/Documents/W3Schools-2021-09-19/w3images/paris.jpg"
+                alt=""
+              />
+            </div>
+            <div class="text-holder">
+              <h3>Paris</h3>
+              <p style="opacity: 0.6">Fri 28 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="#">buy tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="contact-container" id="contact">
+      <div class="cont80">
+        <center>
+            <h1>Contact</h1>
+            <p class="txt"><i>Fan? Drop a note!</i></p>
+          </center>
+          <div class="contact-holder">
+            <div class="con-left">
+                <p>Chicago, US</p>
+                <p>Phone: +00 151515</p>
+                <p>Email: mail@mail.com</p>
+            </div>
+            <div class="con-right">
+                <h1>This space is for form</h1>
+            </div>
+          </div>
+      </div>
+    </section>
+    <div class="bg-image"></div>
+
+    <footer>
+      <h6>designed by your name</h6>
+    </footer>
+  </body>
+</html>
